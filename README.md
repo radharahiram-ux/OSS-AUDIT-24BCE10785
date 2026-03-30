@@ -1,211 +1,340 @@
-# OSS Audit — Git
-### Open Source Software Capstone Project | VITyarthi
+<div align="center">
+
+<!-- HERO BANNER -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=OSS%20Audit%20—%20Git&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Open%20Source%20Software%20Capstone%20Project%20•%20VITyarthi&descSize=16&descColor=a78bfa&animation=fadeIn" width="100%"/>
+
+<!-- BADGES -->
+<p>
+  <img src="https://img.shields.io/badge/Course-Open%20Source%20Software-7c3aed?style=for-the-badge&logo=bookstack&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Subject-Git-f05032?style=for-the-badge&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Licence-GPL%20v2-22c55e?style=for-the-badge&logo=gnu&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Shell-Bash%204%2B-4ade80?style=for-the-badge&logo=gnubash&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Scripts-5%20Written-6366f1?style=for-the-badge&logo=linux&logoColor=white"/>
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/Tested%20on-Ubuntu%2022.04-e11d48?style=flat-square&logo=ubuntu&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Tested%20on-Fedora%2039-3b82f6?style=flat-square&logo=fedora&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Tested%20on-Debian%2012-a21caf?style=flat-square&logo=debian&logoColor=white"/>
+</p>
+
+<br/>
+
+> *"In the spirit of free software — built to learn, shared to grow."*
+
+<br/>
+
+</div>
 
 ---
 
-## Student Information
+## 🧑‍💻 Student Information
 
-| Field | Details |
+<table align="center">
+  <tr>
+    <td><b>👤 Student Name</b></td>
+    <td>Kavyansh Krishan</td>
+  </tr>
+  <tr>
+    <td><b>🎫 Registration No.</b></td>
+    <td>24BCE10785</td>
+  </tr>
+  <tr>
+    <td><b>💻 Chosen Software</b></td>
+    <td><a href="https://git-scm.com/">Git</a> — Distributed Version Control System</td>
+  </tr>
+  <tr>
+    <td><b>⚖️ Software Licence</b></td>
+    <td>GNU General Public License v2 (GPL v2)</td>
+  </tr>
+  <tr>
+    <td><b>📚 Course</b></td>
+    <td>Open Source Software (OSS NGMC)</td>
+  </tr>
+</table>
+
+---
+
+## 🌟 Why Git?
+
+<div align="center">
+<img src="https://img.shields.io/badge/Created%20by-Linus%20Torvalds-f59e0b?style=flat-square"/>
+<img src="https://img.shields.io/badge/Year-2005-64748b?style=flat-square"/>
+<img src="https://img.shields.io/badge/Philosophy-Software%20Freedom-22c55e?style=flat-square"/>
+</div>
+
+<br/>
+
+Git's origin story is one of the most compelling in open-source history. It was born in **direct response to the withdrawal of BitKeeper's free licence** from the Linux kernel project — a moment that crystallised what software freedom truly means.
+
+Linus Torvalds didn't just build a replacement. He built something **better, faster, and forever free** — and gave it to the world under GPL v2. That story is the soul of this capstone project.
+
+---
+
+## 📁 Repository Structure
+
+```
+oss-audit-24BCE10785/
+│
+├── 📄 README.md                               ← You are here
+│
+├── 📂 scripts/
+│   ├── 🖥️  script1_system_identity.sh         ← System Identity Report
+│   ├── 🔍  script2_package_inspector.sh       ← FOSS Package Inspector
+│   ├── 🗂️  script3_disk_permission_auditor.sh  ← Disk & Permission Auditor
+│   ├── 📋  script4_log_analyzer.sh            ← Log File Analyzer
+│   └── ✍️  script5_manifesto_generator.sh     ← Open Source Manifesto Generator
+│
+└── 📑 OSS_Audit_Git_Report.pdf               ← Full project report
+```
+
+---
+
+## 📜 The Five Scripts
+
+> Click on any script to expand details, concepts, and usage.
+
+<details>
+<summary><b>🖥️ Script 1 — System Identity Report</b></summary>
+
+<br/>
+
+**File:** `scripts/script1_system_identity.sh`
+
+Displays a formatted welcome screen showing the current Linux system's identity — think of it as your machine introducing itself.
+
+### What it reports
+| Output | Source Command |
 |---|---|
-| **Student Name** | *Kavyansh Krishan* |
-| **Registration Number** |  *24BCE10785*|
-| **Chosen Software** | Git |
-| **Licence of Software** | GNU General Public License v2 (GPL v2) |
-| **Course** | Open Source Software (OSS NGMC) |
+| Linux distro name | `cat /etc/os-release` |
+| Kernel version | `uname -r` |
+| Logged-in user & home dir | `whoami`, `$HOME` |
+| System uptime | `uptime` |
+| Current date & time | `date` |
+| OS licence (GPL v2) | hardcoded + displayed |
 
----
+### Shell Concepts Covered
+`Variables` • `Command substitution $()` • `echo formatting` • `grep` • `cut`
 
-## About This Project
-
-This repository is the complete submission for the Open Source Audit capstone project. The chosen open-source software is **Git** — the distributed version control system created by Linus Torvalds in 2005.
-
-Git was chosen because its origin story is one of the most compelling in open-source history: it was built in direct response to the withdrawal of a proprietary tool's free licence. Its creation is inseparable from the philosophy of software freedom that this course explores.
-
-The repository contains five shell scripts and a written project report covering Units 1–5 of the course.
-
----
-
-## Repository Structure
-
-```
-oss-audit-[rollnumber]/
-│
-├── README.md                          ← This file
-│
-├── scripts/
-│   ├── script1_system_identity.sh     ← System Identity Report
-│   ├── script2_package_inspector.sh   ← FOSS Package Inspector
-│   ├── script3_disk_permission_auditor.sh  ← Disk & Permission Auditor
-│   ├── script4_log_analyzer.sh        ← Log File Analyzer
-│   └── script5_manifesto_generator.sh ← Open Source Manifesto Generator
-│
-└── OSS_Audit_Git_Report.pdf           ← Project report (also submitted on portal)
-```
-
----
-
-## Script Descriptions
-
-### Script 1 — System Identity Report
-**File:** `script1_system_identity.sh`
-
-Displays a formatted welcome screen showing the current Linux system's identity:
-- Linux distribution name and kernel version
-- Logged-in user and their home directory
-- System uptime and current date/time
-- The open-source licence covering the OS (GPL v2)
-
-**Shell concepts:** Variables, command substitution `$()`, `echo` formatting, `cat /etc/os-release`, `grep`, `cut`
-
----
-
-### Script 2 — FOSS Package Inspector
-**File:** `script2_package_inspector.sh`
-
-Checks whether the `git` package is installed on the system. Supports both RPM-based (Fedora, CentOS, RHEL) and Debian-based (Ubuntu, Debian) distributions. Displays version, licence, and summary. Uses a `case` statement to print a philosophy note about git and other well-known open-source packages.
-
-**Shell concepts:** `if-then-else`, `case` statement, `rpm -qi`, `dpkg -l`, `grep -E`, `command -v`, pipe chaining
-
----
-
-### Script 3 — Disk and Permission Auditor
-**File:** `script3_disk_permission_auditor.sh`
-
-Loops through an array of important system directories (`/etc`, `/var/log`, `/home`, `/usr/bin`, `/tmp`, `/var`, `/opt`) and reports permissions, owner, group, and disk usage for each. Also audits Git's system-wide and user-level configuration files specifically.
-
-**Shell concepts:** Array declaration, `for` loop over array, `[ -d ]` directory test, `ls -ld`, `awk`, `du -sh`, `printf` for formatted output, `2>/dev/null`
-
----
-
-### Script 4 — Log File Analyzer
-**File:** `script4_log_analyzer.sh`
-
-Reads a log file line by line and counts how many lines contain a given keyword (default: `error`, case-insensitive). Prints the last 5 matching lines. Implements a do-while style retry mechanism to try fallback log file locations if the specified file does not exist.
-
-**Shell concepts:** Command-line arguments (`$1`, `$2`), default value assignment (`${2:-"error"}`), `while IFS= read -r` loop, `if-then` inside loop, counter variables `$(( ))`, bash array accumulation, array slicing, do-while simulation, `exit` codes
-
----
-
-### Script 5 — Open Source Manifesto Generator
-**File:** `script5_manifesto_generator.sh`
-
-Interactively asks the user three questions and composes a personalised open-source philosophy statement using their answers. Saves the manifesto to a `.txt` file named after the current user. Demonstrates the alias concept through a helper function pattern.
-
-**Shell concepts:** `read -p` for interactive input, string interpolation in `echo`, file writing with `>` and `>>`, `date` command, `whoami`, input validation with `[ -z ]`, function definition as alias pattern, `cat` for output display
-
----
-
-## How to Run the Scripts
-
-### Prerequisites
-- A Linux system (physical machine, virtual machine, or WSL2)
-- Bash shell (version 4.0 or later)
-- For Script 2: either `rpm` (RPM-based distros) or `dpkg` (Debian-based distros)
-- For Script 4: a readable log file (see note below)
-
-### Step 1 — Clone the repository
-```bash
-git clone https://github.com/KavyanshKrishan/Open_Source_Project_GIT.git
-cd Open_Source_Project_GIT
-```
-
-### Step 2 — Make scripts executable
-```bash
-chmod +x scripts/*.sh
-```
-
-### Step 3 — Run each script
-
-**Script 1 — System Identity Report**
+### Run it
 ```bash
 ./scripts/script1_system_identity.sh
 ```
-No arguments required. Displays system information immediately.
+No arguments needed. Output appears immediately.
+
+</details>
 
 ---
 
-**Script 2 — FOSS Package Inspector**
+<details>
+<summary><b>🔍 Script 2 — FOSS Package Inspector</b></summary>
+
+<br/>
+
+**File:** `scripts/script2_package_inspector.sh`
+
+Checks whether `git` is installed and displays its version, licence, and a philosophy note. Supports both **RPM-based** and **Debian-based** distros — no config needed, it auto-detects.
+
+### Supported Package Managers
+| Distro Family | Package Manager | Detection Command |
+|---|---|---|
+| Fedora / CentOS / RHEL | `rpm` | `rpm -qi git` |
+| Ubuntu / Debian | `dpkg` | `dpkg -l git` |
+
+### Shell Concepts Covered
+`if-then-else` • `case` statement • `rpm -qi` • `dpkg -l` • `grep -E` • `command -v` • pipe chaining
+
+### Run it
 ```bash
 ./scripts/script2_package_inspector.sh
 ```
-No arguments required. Checks for `git` package automatically. Ensure git is installed first:
-```bash
-# Ubuntu/Debian
-sudo apt install git
 
-# Fedora/CentOS/RHEL
-sudo dnf install git
-```
+> **Make sure git is installed first:**
+> ```bash
+> sudo apt install git      # Ubuntu/Debian
+> sudo dnf install git      # Fedora/CentOS
+> ```
+
+</details>
 
 ---
 
-**Script 3 — Disk and Permission Auditor**
+<details>
+<summary><b>🗂️ Script 3 — Disk & Permission Auditor</b></summary>
+
+<br/>
+
+**File:** `scripts/script3_disk_permission_auditor.sh`
+
+Loops through key system directories and reports their permissions, owner, group, and disk usage. Also audits Git's system-wide and user-level config files.
+
+### Directories Audited
+`/etc` • `/var/log` • `/home` • `/usr/bin` • `/tmp` • `/var` • `/opt`
+
+### Git Config Files Checked
+- System-wide: `/etc/gitconfig`
+- User-level: `~/.gitconfig`
+
+### Shell Concepts Covered
+`Array declaration` • `for` loop • `[ -d ]` directory test • `ls -ld` • `awk` • `du -sh` • `printf` formatting • `2>/dev/null`
+
+### Run it
 ```bash
 ./scripts/script3_disk_permission_auditor.sh
-```
-No arguments required. Audits standard system directories and Git config locations.
-> Note: Some directories (like `/var/log`) may require sudo for size reporting:
-```bash
+
+# Some directories need elevated access:
 sudo ./scripts/script3_disk_permission_auditor.sh
 ```
 
+</details>
+
 ---
 
-**Script 4 — Log File Analyzer**
+<details>
+<summary><b>📋 Script 4 — Log File Analyzer</b></summary>
+
+<br/>
+
+**File:** `scripts/script4_log_analyzer.sh`
+
+Reads a log file line by line, counts matches for a keyword (default: `error`, case-insensitive), prints the last 5 matching lines, and retries fallback log locations if the file doesn't exist.
+
+### Usage Examples
 ```bash
-# Basic usage with default keyword 'error'
+# Default — search for 'error' in syslog
 ./scripts/script4_log_analyzer.sh /var/log/syslog
 
-# With a custom keyword
+# Custom keyword
 ./scripts/script4_log_analyzer.sh /var/log/syslog WARNING
 
-# On Fedora/CentOS — use messages instead
+# Fedora/CentOS fallback
 ./scripts/script4_log_analyzer.sh /var/log/messages error
 ```
-> If no log file is accessible, the script will automatically try fallback locations.
+
+### Shell Concepts Covered
+`Command-line args $1 $2` • `Default values ${2:-"error"}` • `while IFS= read -r` • Counter variables `$(( ))` • Array accumulation • Array slicing • Do-while simulation • `exit` codes
+
+</details>
 
 ---
 
-**Script 5 — Open Source Manifesto Generator**
+<details>
+<summary><b>✍️ Script 5 — Open Source Manifesto Generator</b></summary>
+
+<br/>
+
+**File:** `scripts/script5_manifesto_generator.sh`
+
+An interactive script that asks you three questions and weaves your answers into a **personalised open-source philosophy statement**, then saves it as a `.txt` file.
+
+### What it asks
+1. Your name / alias
+2. Why you believe in open source
+3. One piece of software that changed your world
+
+### Output
+Your manifesto is saved as:
+```
+manifesto_[yourusername].txt
+```
+in the current working directory.
+
+### Shell Concepts Covered
+`read -p` • String interpolation • File writing `>` and `>>` • `date` • `whoami` • Input validation `[ -z ]` • Function definition • `cat` for display
+
+### Run it
 ```bash
 ./scripts/script5_manifesto_generator.sh
 ```
-Interactive — the script will prompt you for three answers. Your manifesto is saved as `manifesto_[yourusername].txt` in the current directory.
+Fully interactive — just follow the prompts.
+
+</details>
 
 ---
 
-## Dependencies
+## ⚡ Quick Start
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/KavyanshKrishan/Open_Source_Project_GIT.git
+cd Open_Source_Project_GIT
+
+# 2. Make all scripts executable
+chmod +x scripts/*.sh
+
+# 3. Run any script
+./scripts/script1_system_identity.sh
+./scripts/script2_package_inspector.sh
+./scripts/script3_disk_permission_auditor.sh
+./scripts/script4_log_analyzer.sh /var/log/syslog
+./scripts/script5_manifesto_generator.sh
+```
+
+---
+
+## 🔧 Dependencies
 
 | Dependency | Used In | How to Install |
 |---|---|---|
-| `bash` (v4+) | All scripts | Pre-installed on all Linux distros |
+| `bash` v4+ | All scripts | Pre-installed on all Linux distros |
 | `git` | Script 2, 3 | `sudo apt install git` or `sudo dnf install git` |
-| `rpm` or `dpkg` | Script 2 | Pre-installed on RPM/Debian-based distros |
-| `awk`, `grep`, `cut`, `du`, `ls` | Scripts 1, 2, 3, 4 | Part of GNU coreutils — pre-installed everywhere |
+| `rpm` or `dpkg` | Script 2 | Pre-installed on respective distros |
+| `awk`, `grep`, `cut`, `du`, `ls` | Scripts 1–4 | Part of GNU coreutils — pre-installed |
 | `uname`, `whoami`, `uptime`, `date` | Script 1 | Pre-installed on all POSIX systems |
 
 ---
 
-## Tested On
+## ✅ Tested Environments
 
-- Ubuntu 22.04 LTS (x86_64)
-- Fedora 39
-- Debian 12 (Bookworm)
+<div align="center">
+
+| OS | Version | Status |
+|---|---|:---:|
+| Ubuntu | 22.04 LTS | ✅ Pass |
+| Fedora | 39 | ✅ Pass |
+| Debian | 12 (Bookworm) | ✅ Pass |
+
+</div>
 
 ---
 
-## Academic Integrity
+## 📖 Project Report
 
-All written content in the project report is the original work of the student. Shell scripts were written and tested by the student. Any external references consulted are cited within the report.
+The full written report covering all 5 units of the course is available in this repository:
+
+```
+📑 OSS_Audit_Git_Report.pdf
+```
+
+It covers the history of Git, its GPL v2 licence, community governance, ecosystem analysis, and the philosophy of free and open-source software.
 
 ---
 
-## Licence
+## ⚖️ Licence
 
-The shell scripts in this repository are released under the **MIT Licence** — in the spirit of the open-source values explored in the project itself.
+The shell scripts in this repository are released under the **MIT Licence** — in the spirit of the open-source values explored in this project.
 
 ```
-MIT License — Copyright (c) 2026 [Your Name]
-Permission is granted to use, copy, modify, and distribute this software
-for any purpose, with or without modification.
+MIT License — Copyright (c) 2026 Kavyansh Krishan
+
+Permission is granted to use, copy, modify, and distribute this
+software for any purpose, with or without modification.
 ```
+
+---
+
+## 🎓 Academic Integrity
+
+All written content in the project report is the original work of the student. Shell scripts were written and tested independently. Any external references consulted are cited within the report.
+
+---
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer&text=Built%20with%20freedom%20•%20GPL%20v2%20spirit&fontSize=16&fontColor=a78bfa&fontAlignY=65" width="100%"/>
+
+<br/>
+
+*Made with 🖤 by Kavyansh Krishan — VITyarthi, 2026*
+
+</div>
