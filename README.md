@@ -1,4 +1,4 @@
-#<div align="center">
+<div align="center">
 
 <!-- HERO BANNER -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=OSS%20Audit%20—%20Git&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Open%20Source%20Software%20Capstone%20Project%20•%20VITyarthi&descSize=16&descColor=a78bfa&animation=fadeIn" width="100%"/>
